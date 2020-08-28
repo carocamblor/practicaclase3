@@ -2,15 +2,44 @@
     Color: #231d57;
     font-size: 26px;
 }
-.productos{
-    background-color:black;
+.productos,.ofertas{
+    background-color:rgb(180, 180, 180);
     font-size: 20px;
     font-weight: normal;
-    color: white;
+    color: black;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid grey;
+   padding: 16px;
+   gap: 20px;
 }
+.ofertas{
+    margin-bottom: 30px;
+}
+
+
+.imagen-producto {
+    display: inline;
+}
+
 h5{ color: green;
 
 }
+
+h3 {
+    display: inline;
+}
+
 .pagos{
+    
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* “Ultima visita” y “Ofertas” deberán estar dispuestos en 2 columnas con un espacio entre ellas de 30px.*/ 
+
+.fotos{
+    width: 300px;
+    height: 300px;
+
 }
