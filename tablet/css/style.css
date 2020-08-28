@@ -7,7 +7,13 @@
     font-size: 20px;
     font-weight: normal;
     color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid grey;
+   padding: 16px 16px 16px 16px;
+   gap: 30px;
 }
+
 
 .imagen-producto {
     display: inline;
@@ -23,12 +29,8 @@ h3 {
 
 .pagos{
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 /* “Ultima visita” y “Ofertas” deberán estar dispuestos en 2 columnas con un espacio entre ellas de 30px.*/ 
 
-.columnas{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: space-between 30px;
-    padding: 15px 15px 15px 15px;
-}
