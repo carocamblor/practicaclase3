@@ -43,3 +43,35 @@ h3 {
     height: 300px;
 
 }
+.menu{
+    background-color: yellow;
+  
+    
+}
+#cuotas{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between ;
+   border-bottom: 1px solid black;
+}
+#menubotones{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between ;
+
+}
+#menubotones ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
+}
+#menubotones ul li{
+ margin-right: 10px;
+ 
+}
+#menubotones ul li a{
+    text-decoration: none;
+    color: black;
+}
