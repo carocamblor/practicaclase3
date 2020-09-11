@@ -1,0 +1,18 @@
+body{
+    background-color: #ebebeb;
+}
+.header__nav a{
+    background-color: #eac926;
+}
+.product{
+    background-color: #fff;
+}
+
+.product-data img{
+    width: 30px;
+}
+
+.footer--info{
+    text-align: center;
+}
+
