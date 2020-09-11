@@ -6,6 +6,8 @@ body{
 }
 .product{
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-data img{
@@ -15,4 +17,41 @@ body{
 .footer--info{
     text-align: center;
 }
+.header__nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
+}
+.banner{
+    display: none;
+}
+@media (min-width: 768px){
+    .banner{
+        display: block;
+    }
+    .product-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+@media (min-width: 1024px){
+    .banner{
+        display: block;
+    }
+    .product-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    .header__nav{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: stretch;
+        background-color: #eac926;
+    }
+    
+
+}
