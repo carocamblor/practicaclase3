@@ -53,12 +53,63 @@ window.addEventListener('load', function() {
    /* Asignarle a cada personaje su evento correspondiente, así como también su funcionalidad */
 
   bart.addEventListener("click", function(){
-  alert("me hicieron click")
+      this.classList.toggle('personaje-seleccionado');
   })
+
+  lisa.addEventListener("dblclick", function() {
+     this.classList.toggle('personaje-seleccionado');
+  })
+
+  homero.addEventListener("click", function() {
+     this.classList.toggle('personaje-seleccionado');
+  })
+
+  marge.addEventListener("mouseover", function() {
+     this.classList.toggle('personaje-seleccionado');
+  })
+
+  maggie.addEventListener("mouseout", function() {
+     this.classList.toggle('personaje-seleccionado');
+   })
+
+   milhouse.addEventListener("click", function() {
+      this.classList.toggle('personaje-seleccionado');
+   })
+
+   burns.addEventListener("mouseover", function() {
+      this.classList.toggle('personaje-seleccionado');
+   })
+
+   bobPatinio.addEventListener("dblclick", function() {
+      this.classList.toggle('personaje-seleccionado');
+   })
+
+   flanders.addEventListener("mouseover", function() {
+      this.classList.toggle('personaje-seleccionado');
+   })
+
+   duffman.addEventListener("dblclick", function() {
+      this.classList.toggle('personaje-seleccionado');
+   })
+
+   gorgory.addEventListener("mouseover", function() {
+      this.classList.toggle('personaje-seleccionado');
+   })
+
+   nelson.addEventListener("click", function() {
+      this.classList.toggle('personaje-seleccionado');
+   })
    
-   var boton = ___________________;
+   var boton = document.querySelector('.boton');
 
    /* Asignarle evento a la variable boton */
 
-
+   boton.addEventListener('click', function(){
+      var todosLosEleentosPintados = document.querySelectorAll('.personaje-seleccionado');
+      for (let i = 0; i < todosLosEleentosPintados.length; i++) {
+         const unPersonaje = todosLosEleentosPintados[i];
+         
+         console.log(unPersonaje.id)
+      }
+   })
 }) 
