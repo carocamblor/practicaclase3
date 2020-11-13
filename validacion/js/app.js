@@ -5,12 +5,23 @@ window.addEventListener('load', function() {
     var email = document.querySelector('#email')
     var errorTelefono = document.querySelector('#errorTelefono')
     var errorMail = document.querySelector('#errorMail')
+    var campos = document.querySelectorAll('.form-group')
 
-    /*
+    console.log(campos)
+
     form.addEventListener('submit', function(event){
-        var errores = '';
         if (email.value === '') {
-            
+            alert('hola')
+            preventDefault()
+            email.classList.add('is-invalid')
+        }
+    })
+/*
+    form.addEventListener('submit', function(event){
+        if (campos === "") {
+            alert('hola')
+            preventDefault()
+            this.classList.add('is-invalid')
         }
     })*/
 
