@@ -23,7 +23,7 @@ window.addEventListener('load', function(){
         console.log(element)
           searchResults.innerHTML += `
           <li>
-            <a href="">${element.title}</a>
+            <a href="detallesgifs.html/id${}">${element.title}</a>
             <img src="${element.images.original.url}" alt="">
           </li>
           `
